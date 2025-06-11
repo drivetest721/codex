@@ -1,0 +1,127 @@
+#root {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.calculator {
+  background: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.calculator-display {
+  background: #000;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 20px;
+  text-align: right;
+}
+
+.display-value {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 1.2em;
+}
+
+.calculator-keypad {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+
+.input-keys {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.function-keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.digit-keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.digit-keys .key-0 {
+  grid-column: 1 / 3;
+}
+
+.operator-keys {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calculator-key {
+  background: #666;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 400;
+  height: 60px;
+  outline: none;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.calculator-key:hover {
+  background: #777;
+}
+
+.calculator-key:active {
+  background: #555;
+}
+
+.key-operator {
+  background: #ff9500 !important;
+}
+
+.key-operator:hover {
+  background: #ffad33 !important;
+}
+
+.key-operator:active {
+  background: #cc7700 !important;
+}
+
+.key-equals {
+  background: #ff9500 !important;
+  grid-row: 3 / 5;
+}
+
+.key-equals:hover {
+  background: #ffad33 !important;
+}
+
+.key-equals:active {
+  background: #cc7700 !important;
+}
+
+.key-clear {
+  background: #a6a6a6 !important;
+  color: #000 !important;
+}
+
+.key-clear:hover {
+  background: #bfbfbf !important;
+}
+
+.key-clear:active {
+  background: #8c8c8c !important;
+}
