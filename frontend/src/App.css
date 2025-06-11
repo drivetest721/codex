@@ -3,28 +3,35 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  font-family: 'Roboto', sans-serif;
 }
 
 .calculator {
-  background: #333;
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
   padding: 20px;
-  max-width: 320px;
+  max-width: 340px;
   margin: 0 auto;
+  backdrop-filter: blur(4px);
 }
 
 .calculator-display {
-  background: #000;
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 5px;
   margin-bottom: 15px;
-  padding: 20px;
+  padding: 25px;
   text-align: right;
 }
 
 .display-value {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 300;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -68,7 +75,7 @@
 }
 
 .calculator-key {
-  background: #666;
+  background: #444;
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -81,47 +88,47 @@
 }
 
 .calculator-key:hover {
-  background: #777;
-}
-
-.calculator-key:active {
   background: #555;
 }
 
+.calculator-key:active {
+  background: #333;
+}
+
 .key-operator {
-  background: #ff9500 !important;
+  background: #f57c00 !important;
 }
 
 .key-operator:hover {
-  background: #ffad33 !important;
+  background: #fb8c00 !important;
 }
 
 .key-operator:active {
-  background: #cc7700 !important;
+  background: #ef6c00 !important;
 }
 
 .key-equals {
-  background: #ff9500 !important;
+  background: #f57c00 !important;
   grid-row: 3 / 5;
 }
 
 .key-equals:hover {
-  background: #ffad33 !important;
+  background: #fb8c00 !important;
 }
 
 .key-equals:active {
-  background: #cc7700 !important;
+  background: #ef6c00 !important;
 }
 
 .key-clear {
-  background: #a6a6a6 !important;
+  background: #c2c2c2 !important;
   color: #000 !important;
 }
 
 .key-clear:hover {
-  background: #bfbfbf !important;
+  background: #d1d1d1 !important;
 }
 
 .key-clear:active {
-  background: #8c8c8c !important;
+  background: #a0a0a0 !important;
 }
